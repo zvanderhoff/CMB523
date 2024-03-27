@@ -154,7 +154,10 @@ It is simple code to write, but isn't the most efficient.
 
 QUESTION 3: What do i and j represent in the loops above, respectively? 
 
-<YOUR ANSWER HERE>
+i is every value in the sequencing matrix starting from 1 and going to the number of rows
+j is every number in the matrix going from 1 to the number of columns
+
+for every row i, each column j is checked
 
 
 The code below actually still uses nested loops, but rather than call nrow and ncol within the loop, we call them outside of the loop and store the result.
@@ -185,7 +188,7 @@ The code above should be faster than our first attempt.
 
 QUESTION 4: Since the above code is faster and the only change we made was storing the result of nrow and ncol, rather than calling them in the loop declaration, what does that imply about the number of times the nrow and ncol functions were being called in our first version.
 
-<YOUR ANSWER HERE>
+nrow and ncol were being called more often in the first version making it slower
 
 
 Alright! Maybe you don't know how to vectorize the whole thing, but remember you can work with whole rows at once and replace the whole row. That is, rather than looking at each cell one-by-one, you could instead look at the whole row at once and replace them all at once. 
@@ -237,7 +240,7 @@ Depending on some details we don't have time to get into today, Method 4 may be 
 
 QUESTION 6: Which of the methods (1-4) to replace all the lower-case As with upper case A ran fastest? How many times faster was the fastest method than the slowest method?
 
-<WRITE YOUR ANSWER HERE>
+Method 1 took 1.2 minutes so about 72 seconds, method 3 took about 0.3 seconds so about 1/240th the time
 
 
 ## Writing code to solve a problem
