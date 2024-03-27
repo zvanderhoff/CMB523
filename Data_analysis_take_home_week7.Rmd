@@ -115,7 +115,7 @@ print(summary(testDat[which(testDat$Diagnosis!=testDat$Prediction),"Diagnosis"])
 ```
 QUESTION 3: In your results, was there a bias to which kind of lesion was misclassified more often? 
 
-Yes. All the errors were false positives, actually bening, but predicted malignant
+Yes. All the errors were false positives, actually benign, but predicted malignant
 
 QUESTION 4: Do you think that it would be better for the machine learning algorithm to classify benign tumors as malignant or malignant tumors as benign. What other information might you want to make that decision? (Not really a right or wrong questions, but making you think about what your data looks like)
 
